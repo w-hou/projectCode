@@ -11,7 +11,7 @@ exports.main = async (event, context) => {
     
     try {
 
-        return db.collection("bookingData").get();
+        return db.collection("bookingData").where(event).get();
 
     } catch (err) {
 

@@ -1,4 +1,6 @@
-// miniprogram/pages/auth/auth.js
+// 获取小程序注册实例
+let app = getApp();
+
 Page({
 
     /**
@@ -11,14 +13,13 @@ Page({
     // 获取用户认证信息
     getUserAuthInfo: function(e) {
 
-        // 
         // 如果用户已授权
         if(e.detail.userInfo){
             app.globalData.isAuth = true;
 
             //返回上一级
             wx.navigateBack({
-                delta: 1
+                delta: 1,
             })
         }
 
