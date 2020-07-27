@@ -1,0 +1,58 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="home">
+    <view class="home-head">
+        <view>
+            <view class="title">本月结余</view>
+            <view class="money">
+                <view>{{ currentMonthData.jieyu[0] }}.</view>
+                <view class="money-decimals">{{ currentMonthData.jieyu[1] }}</view>
+            </view>
+        </view>
+
+        <view class="home-text">
+            <view class="income">
+                <view>本月收入</view>
+                <view class="income-money">￥{{ currentMonthData.shouru }}</view>
+            </view>
+            <view class="line"></view>
+            <view class="expend">
+                <view>本月支出</view>
+                <view class="expend-money">￥{{ currentMonthData.zhichu }}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="home-content">
+        <view class="content">
+            <view class="left">
+                <view>{{ currentDate }}</view>
+                <view class="left-income">收入: {{ currentDayData.shouru }}</view>
+                <view>支出: {{ currentDayData.zhichu }}</view>
+            </view>
+
+            <view class="right">
+                <view class="dot"></view>
+                <view class="dot"></view>
+                <view class="dot"></view>
+
+                <picker class="picker" mode="date" start="{{ dateRange.start }}" end="{{ dateRange.end }}" bindchange="selectDate">请选择日期</picker>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="list-item" wx:for="{{ bookingDate }}" wx:key="index">
+            <view class="item-icon">
+                <image class="auto-img icon" mode="widthFix" src="{{ item.bookingType.url }}"></image>
+            </view>
+            <view class="item-content">
+                <view class="item-text">
+                    <view class="title">{{ item.bookingType.title }}</view>
+                    <view class="type">{{ item.accountType }}</view>
+                </view>
+                <view class="comment" wx:if="{{ item.bookingInfo.comment }}">备注: {{ item.bookingInfo.comment }}</view>
+            </view>
+            <view class="list-money {{ item.costType.type == 'zhichu' ? 'expendColor' : 'incomeColor' }}">{{ item.costType.type == 'zhichu' ? '－' : '＋' }}￥{{ item.bookingInfo.money }}</view>
+        </view>
+    </view>
+</view>

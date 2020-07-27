@@ -1,0 +1,7 @@
+button{
+    margin-top: 100rpx;
+    /* color: #40A2F9; */
+    background-color: #40A2F9;
+    /* border: 2rpx solid #40A2F9; */
+    font-weight: 400;
+}

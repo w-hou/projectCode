@@ -1,0 +1,21 @@
+<view class="epidemic">
+    <view class="epidemic-title">
+        <view class="option {{ index == active ? 'active' : '' }}" wx:for="{{ epidemicData }}" wx:key="index" data-key="{{ index }}" bindtap="switchover">{{ item.title }}</view>
+    </view>
+    <view class="epidemic-data">
+
+        <view class="epidemic-date">{{ date }}</view>
+        <view class="epidemic-list">
+        
+            <view class="item" wx:for="{{ epidemicData[active].listData }}" wx:key="index" style="width:{{ active == 1 ? '25%' : '33%' }}">
+                <view class="item-title">{{ item.title }}</view>
+                <view class="item-count" style="color: {{ item.color }}">{{ item.count }}</view>
+                <view class="increase" wx:if="{{ item.incr >= 0 }}">较上日
+                    <view class="increase-count" style="color: {{ item.color }}"> +{{ item.incr }}</view>
+                </view>
+            </view>
+
+        </view>
+        
+    </view>
+</view>

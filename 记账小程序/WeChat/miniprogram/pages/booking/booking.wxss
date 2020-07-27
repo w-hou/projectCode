@@ -1,0 +1,136 @@
+/* miniprogram/pages/booking/booking.wxss */
+.bg {
+    height: 200rpx;
+    background-color: #0c7cdf;
+}
+
+.booking-box {
+    position: relative;
+    top: -100rpx;
+    padding: 20rpx;
+}
+
+.booking-tabs {
+    padding: 20rpx 0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.booking-tabs .title {
+    display: flex;
+    width: 200rpx;
+    height: 50rpx;
+    margin: 0 auto;
+    border: 1px solid #40A2F9;
+    border-radius: 20px;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+
+.income {
+    flex: 1;
+}
+
+.expend {
+    flex: 1;
+}
+
+.box-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons-item {
+    width: 20%;
+    margin-top: 30rpx;
+    transition: .3s;
+}
+
+.icons-item .item-img {
+    width: 60rpx;
+    margin: auto;
+}
+
+.icons-item .item-img .icon-img {
+    height: 60rpx;
+}
+
+.icons-item .item-text {
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.iconAction {
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.booking-account {
+    margin: 20rpx 0;
+    padding: 20rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+}
+
+.account-title {
+    padding-bottom: 20rpx;
+    font-size: 28rpx;
+    border-bottom: 1rpx solid #e8e8e8;
+}
+
+.account {
+    display: flex;
+    padding-top: 20rpx;
+    font-size: 24rpx;
+    justify-content: space-around;
+}
+
+.account-item {
+    width: 16%;
+    background-color: #e8e8e8;
+    border-radius: 20rpx;
+    text-align: center;
+    line-height: 45rpx;
+}
+
+.active {
+    background-color: #40A2F9;
+}
+
+.booking-info {
+    padding: 20rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+}
+
+.info {
+    font-size: 28rpx;
+}
+
+.info-item {
+    display: flex;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.title {
+    margin-right: 40rpx;
+}
+
+.weui {
+    flex: 1;
+    height: 100%;
+    color: #808080;
+}
+
+.preserve {
+    height: 80rpx;
+    margin-top: 80rpx;
+    background-color: #40A2F9;
+    border-radius: 20rpx;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+}

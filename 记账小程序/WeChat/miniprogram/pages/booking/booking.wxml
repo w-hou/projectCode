@@ -1,0 +1,53 @@
+<!--miniprogram/pages/booking/booking.wxml-->
+<view class="booking">
+	<view class="bg"></view>
+
+	<view class="booking-box">
+
+		<view class="booking-tabs">
+			<view class="title">
+				<view class="income {{ num === index ? 'active' : '' }}" wx:for="{{ tagData }}" wx:key="index" data-index="{{ index }}" data-key="num" bindtap="toggleTab">{{ item.title }}{{ item.num }}</view>
+			</view>
+
+			<view class="box-icons">
+				<view class="icons-item {{ iconNum == index ? 'iconAction' : '' }}" wx:for="{{ icons }}" wx:key="index" data-index="{{ index }}" data-key="iconNum" bindtap="toggleTab">
+					<view class="item-img">
+						<image class="icon-img auto-img" mode="widthFix" src="{{ item.url }}"></image>
+					</view>
+					<view class="item-text">{{ item.title }}</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="booking-account">
+			<view class="account-title">账户选择</view>
+			<view class="account">
+				<view class="account-item {{ accountNum == index ? 'active' : '' }}" wx:for="{{ accountData }}" wx:key="index" data-index="{{ index }}" data-key="accountNum" bindtap="toggleTab">{{ item.title }}</view>
+			</view>
+		</view>
+
+		<view class="booking-info">
+			<view class="info">
+				<view class="info-item">
+					<view class="title">日期</view>
+					<picker class="weui" mode="date" data-key="date" start="2019-09-01" end="2020-09-01" bindchange="bindchange">
+						{{ bookingInfo.date }}
+					</picker>
+				</view>
+				<view class="info-item">
+					<view class="title">金额</view>
+					<input class="weui" bindchange="bindchange" data-key="money" type="digit" placeholder="输入金额" />
+				</view>
+				<view class="info-item">
+					<view class="title">备注</view>
+					<input class="weui" bindchange="bindchange" data-key="comment" placeholder="输入备注" />
+				</view>
+			</view>
+		</view>
+
+		<view class="preserve" bindtap="preserve">保存</view>
+
+	</view>
+
+</view>

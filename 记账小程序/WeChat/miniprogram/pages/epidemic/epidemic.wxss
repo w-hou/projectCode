@@ -1,0 +1,62 @@
+
+.epidemic-title{
+    display: flex;
+    background-color: #F9F4F0;
+}
+
+.option{
+    width: 50%;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.active{
+    background-color: #fff;
+}
+
+.epidemic-data{
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.epidemic-date{
+    color: #ccc;
+    font-size: 28rpx;
+}
+
+.epidemic-list{
+    display: flex;
+    color: #666;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.epidemic-list .item{
+    width: 33%;
+    margin: 20rpx 0;
+    text-align: center;
+}
+
+.epidemic-list .item .item-title{
+    font-size: 28rpx;
+}
+
+.epidemic-list .item .item-count{
+    color: #CC4100;
+    font-size: 36rpx;
+    font-weight: bold;
+    line-height: 60rpx;
+    /* border-right: 1rpx solid #eee; */
+}
+
+.epidemic-list .item .increase{
+    display: flex;
+    font-size: 20rpx;
+    color: #ccc;
+    justify-content: center;
+}
+
+/* .epidemic-list .item:nth-child(3n) .item-count {
+    border: none;
+}  */

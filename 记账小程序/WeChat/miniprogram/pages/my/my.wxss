@@ -1,0 +1,44 @@
+.my-info {
+    padding: 80rpx;
+    background-color: #40A2F9;
+}
+
+.photo {
+    width: 140rpx;
+    height: 140rpx;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8rpx rgba(255, 255, 255, .3);
+    overflow: hidden;
+}
+
+.photo-img {
+    height: 100%;
+}
+
+.name {
+    margin-top: 30rpx;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.list-item {
+    display: flex;
+    padding: 20rpx;
+    background-color: #fff;
+    border-bottom: 2rpx solid #f6f6f6;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.arrow-img{
+    height: 40rpx;
+}

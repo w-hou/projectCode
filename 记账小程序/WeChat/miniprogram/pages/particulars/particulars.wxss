@@ -1,0 +1,57 @@
+.list-item{
+    display: flex;
+    padding: 10rpx;
+    background-color: #fff;
+    border-bottom: 2rpx solid #F6F6F6;
+    font-size: 24rpx;
+    align-items: center;
+}
+
+.item-icon{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+
+.icon{
+    height: 80rpx;
+}
+
+.item-content{
+    display: flex;
+    flex: 1;
+    margin: 0 20rpx;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item-text{
+    display: flex;
+}
+
+.title{
+    margin-right: 20rpx;
+    font-weight: bold;
+}
+
+.comment{
+    margin-top: 10rpx;
+    color:#666;
+}
+
+.type{
+    color:#666;
+}
+
+.list-money{
+    font-weight: bold;
+    font-size: 26rpx;
+}
+
+.incomeColor{
+    color: #03B16C;
+}
+
+.expendColor{
+    color: #E4393C; 
+}

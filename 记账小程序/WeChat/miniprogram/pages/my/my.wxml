@@ -1,0 +1,18 @@
+<view class="my">
+    <view class="my-info">
+        <view class="photo">
+            <image class="auto-img photo-img" mode="widthFix" src="{{ userInfo.userImg }}"></image>
+        </view>
+        <view class="name" wx:if="{{ userInfo.nickname }}">{{ userInfo.nickname }}</view>
+        <view class="name" wx:else bindtap="authorization">点击登录授权</view>
+    </view>
+
+    <view class="list">
+        <view class="list-item" wx:for="{{ listData }}" wx:key="index" data-url="{{ item.url }}" bindtap="goTo">
+            <view class="title">{{ item.title }}</view>
+            <view class="arrow">
+                <image class="auto-img arrow-img" src="../../icons/right-arrow.png" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+</view>

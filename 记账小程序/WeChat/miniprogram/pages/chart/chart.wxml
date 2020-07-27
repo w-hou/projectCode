@@ -1,0 +1,46 @@
+<!--miniprogram/pages/chart/chart.wxml-->
+<view class="chart">
+    <view class="search">
+        <view class="date">
+            <picker class="picker" mode="date" start="{{ date.start }}" end="{{ date.end }}" bindchange="selectDate">{{ currentDate }}</picker>
+        </view>
+        <view class="selectSearch" bindtap="toggleSearch">{{ title[default] }}查询</view>
+    </view>
+
+    <view class="text">
+        <view class="line {{ listActive == index ? item.type : '' }}" wx:for="{{ list }}" wx:key="index" data-index="{{ index }}" bindtap="toggleList">
+            <view class="title">{{ title[default] }}{{ item.title }}</view>
+            <view class="money {{ item.type }}">{{ item.total }}</view>
+        </view> 
+    </view>
+
+    <!-- 饼图 -->
+    <view class="chart-content" hidden="{{ bookingData[list[listActive].type].length == 0 }}">
+        <canvas class="canvas" canvas-id="pieCanvas" style="width: {{ canvasWidth }}px"></canvas>
+    </view>
+
+    <view class="typeList">
+
+        <view class="list-item" wx:for="{{ bookingData[list[listActive].type] }}" wx:key="index" data-ids="{{ item.ids }}" data-title="{{ item.title }}" data-costTitle="{{ item.costTitle }}"  bindtap="goParticulars">
+            <view class="icon-box">
+                <image class="auto-img icon" mode="widthFix" src="{{ item.url }}"></image>
+            </view>
+            <view class="item-content">
+                <view class="item-text">
+                    <view class="item-type">{{ item.title }}</view>
+                    <view class="item-money {{ list[listActive].type }}">￥{{ item.total }}</view>
+                </view>
+                <view class="item-text">
+                    <view class="progress-box">
+                        <view class="progress" style="width: {{ item.percent }}; background-color: {{ item.color }};"></view>
+                    </view>
+                    <view class="item-count">{{ item.count }}笔</view>
+                </view>
+            </view>
+            <view class="arrow">
+                <image class="auto-img right-arrow" mode="widthFix" src="../../icons/right-arrow.png"></image>
+            </view>
+        </view>
+
+    </view>
+</view>

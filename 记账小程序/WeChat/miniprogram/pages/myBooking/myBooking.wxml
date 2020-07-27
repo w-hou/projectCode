@@ -1,0 +1,22 @@
+<view class="list">
+    <view class="list-item" wx:for="{{ bookingDate }}" wx:key="index">
+        <view class="item-icon">
+            <image class="auto-img icon" mode="widthFix" src="{{ item.bookingType.url }}"></image>
+        </view>
+        <view class="item-content">
+            <view class="item-text">
+                <view class="title">{{ item.bookingType.title }}</view>
+                <view class="type">{{ item.accountType }}</view>
+                <view class="date">{{ item.bookingInfo.date }}</view>
+            </view>
+            <view class="comment" wx:if="{{ item.bookingInfo.comment }}">备注: {{ item.bookingInfo.comment }}</view>
+        </view>
+
+        <view class="list-money {{ item.costType.type == 'zhichu' ? 'expendColor' : 'incomeColor' }}">{{ item.costType.type == 'zhichu' ? '－' : '＋' }}￥{{ item.bookingInfo.money }}</view>
+
+        <view class="del" data-id="{{ item._id }}" data-index="{{ index }}" bindtap="delBookingData">
+            <image class="auto-img del-img" mode="widthFix" src="../../icons/delete.png"></image>
+        </view>
+
+    </view>
+</view>
