@@ -1,0 +1,121 @@
+{
+  "id": "1842985",
+  "name": "oppo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14623926",
+      "name": "已完成",
+      "font_class": "renwuliebiao_zhijian",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4179425",
+      "name": "jia",
+      "font_class": "jia",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "5044513",
+      "name": "成功",
+      "font_class": "chenggong4",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "10938590",
+      "name": "删 除 (1)",
+      "font_class": "shanchu",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "2631668",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "11864397",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "377526",
+      "name": "待付款50*50px",
+      "font_class": "daifukuan5050px",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "2358265",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "10017155",
+      "name": "回收",
+      "font_class": "huishou",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "11739999",
+      "name": "发货",
+      "font_class": "-fahuo",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "14416984",
+      "name": "已发货",
+      "font_class": "icon_shouhuo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4225746",
+      "name": "购物车",
+      "font_class": "ziyuan",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "2787471",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "5561621",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "9176503",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "10423511",
+      "name": "oppo",
+      "font_class": "oppo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
