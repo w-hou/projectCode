@@ -1,12 +1,18 @@
 // 获取小程序注册实例
 let app = getApp();
 
+//导入utils
+import { utils } from "../../js/utils"
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        // 当前时间
+        currentDate: "",
+        
         num: 0,
         tagData: [
             {
@@ -212,6 +218,12 @@ Page({
     onLoad: function (options) {
         // 获取图标数据
         this.getIconData();
+        
+        let currentDate = utils.formatDate(new Date(), 'yyyy-MM-dd');
+
+        this.setData({
+            currentDate,
+        })
     },
 
     /**
