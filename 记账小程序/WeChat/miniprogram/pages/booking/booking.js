@@ -201,13 +201,21 @@ Page({
             success: res => {
                 wx.hideLoading();
 
-                
+                wx.showToast({
+                    title: '保存成功',
+                    icon: 'success',
+                    duration: 2000
+                })
             },
             // 失败
             fail: err => {
                 wx.hideLoading();
 
-                
+                wx.showToast({
+                    title: '保存失败',
+                    icon: 'error',
+                    duration: 2000
+                })
             }
         });
     },
