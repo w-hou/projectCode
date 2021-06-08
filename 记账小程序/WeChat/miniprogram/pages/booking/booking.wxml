@@ -31,7 +31,7 @@
 			<view class="info">
 				<view class="info-item">
 					<view class="title">日期</view>
-					<picker class="weui" mode="date" data-key="date" start="2019-09-01" end="2020-09-01" bindchange="bindchange">
+					<picker class="weui" mode="date" data-key="date" start="2019-09-01" end="{{ currentDate }}" bindchange="bindchange">
 						{{ bookingInfo.date }}
 					</picker>
 				</view>
